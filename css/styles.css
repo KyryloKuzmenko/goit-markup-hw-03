@@ -36,6 +36,9 @@ img {
 }
 
 /* Header */
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
 
 .header-logo,
 .footer-logo {
@@ -47,6 +50,11 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
 }
+
+.header-logo {
+  margin-right: 76px;
+}
+
 .accent {
   color: #2e2f42;
 }
@@ -56,7 +64,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-right: 40px;
 }
 
 .nav-link:hover,
@@ -84,8 +91,8 @@ img {
 }
 
 .container {
-  width: 1164px;
-  padding: 0 15px;
+  width: 1158px;
+  padding: 0 15px 0 15px;
   margin: 0 auto;
 }
 
@@ -93,23 +100,25 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0;
 }
 
 .page-nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .menu {
   display: flex;
-  margin-left: 76px;
+  gap: 40px;
 }
 
 .page-address {
   display: flex;
+}
+
+.menu-item {
+  gap: 40px;
 }
 
 /* /Header */
@@ -117,6 +126,7 @@ img {
 /* Hero section */
 .hero-section {
   background: #2e2f42;
+  padding: 188px 0;
 }
 
 .hero {
@@ -139,10 +149,10 @@ img {
   cursor: pointer;
 
   border-radius: 4px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   margin-top: 48px;
-  margin-bottom: 188px;
+  border: none;
 }
 
 .hero-button:hover,
@@ -154,7 +164,6 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 188px;
 }
 
 /* Benefit section */
@@ -180,6 +189,12 @@ img {
   color: #2e2f42;
 }
 
+.benefits-title,
+.person-name,
+.portfolio-products {
+  margin-bottom: 8px;
+}
+
 .benefit-paragraph,
 .person-duties,
 .portfolio-paragraph {
@@ -191,16 +206,15 @@ img {
 
 .benefit-list {
   display: flex;
+  gap: 24px;
 }
 
 .benefit-item {
-  width: 264px;
-  margin-right: 24px;
+  width: calc((100% - 72px) / 4);
 }
 
-.benefit-container {
-  margin-top: 120px;
-  margin-bottom: 120px;
+.benefit-section {
+  padding: 120px 0;
 }
 
 /* /Benefit section */
@@ -208,6 +222,7 @@ img {
 /* Team section */
 .team-section {
   background: #f4f4fd;
+  padding: 120px 0;
 }
 
 .team-title,
@@ -219,12 +234,11 @@ img {
   color: #2e2f42;
   text-align: center;
   text-transform: capitalize;
-  padding-top: 120px;
-  margin-bottom: 72px;
 }
 
 .team-list {
   display: flex;
+  gap: 24px;
   padding-bottom: 120px;
 }
 
@@ -232,9 +246,7 @@ img {
   background: #fff;
   border-radius: 0 0 4px 4px;
   padding: 0px 0px 32px 0px;
-  width: 264px;
-  height: 380px;
-  margin-right: 24px;
+  width: calc((100% - 72px) / 4);
 
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -242,24 +254,18 @@ img {
 }
 
 .person-info {
-  width: 232px;
-  height: 56px;
   text-align: center;
-  margin: 32px auto;
+  padding: 32px 0;
 }
 
 /* /Team section */
 
 /* Portfolio section */
-/* .portfolio-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  text-align: center;
-  text-transform: capitalize;
-} */
+
+.portfolio-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 .portfolio-products {
   font-weight: 500;
@@ -276,20 +282,18 @@ img {
   row-gap: 48px;
 }
 
-.portfolio-item {
+/* .portfolio-item {
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
-}
+} */
 
 .product-info {
-  margin-top: 32px;
+  /* margin-top: 32px;
   margin-left: 16px;
-  margin-bottom: 32px;
-}
-
-.page-portfolio {
-  padding-bottom: 120px;
+  margin-bottom: 32px; */
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
 }
 
 /* /Portfolio section */
@@ -297,6 +301,7 @@ img {
 /* Footer section */
 .footer-section {
   background: #2e2f42;
+  padding: 100px 0;
 }
 
 .footer-paragraph,
@@ -307,10 +312,6 @@ img {
 .footer-paragraph {
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-
-.page-footer {
-  padding: 100px 0;
 }
 
 .footer-logo {
