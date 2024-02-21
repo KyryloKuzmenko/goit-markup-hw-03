@@ -83,7 +83,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  margin-right: 40px;
 }
 
 .address-link:hover,
@@ -112,13 +111,12 @@ img {
 .menu {
   display: flex;
   gap: 40px;
-} 
+}
 
 .page-address {
   display: flex;
   gap: 40px;
 }
-
 
 /* /Header */
 
@@ -243,13 +241,11 @@ img {
 .team-list {
   display: flex;
   gap: 24px;
-  padding-bottom: 120px;
 }
 
 .team-item {
   background: #fff;
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
   width: calc((100% - 72px) / 4);
 
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -285,7 +281,6 @@ img {
   column-gap: 24px;
   row-gap: 48px;
 }
-
 
 .product-info {
   padding: 32px 16px;
