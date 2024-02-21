@@ -116,6 +116,7 @@ img {
 
 .page-address {
   display: flex;
+  gap: 40px;
 }
 
 
